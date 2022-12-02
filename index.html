@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-color :#87CEEB
+}
+
+
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid white;
+    background: #00becc;
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example1 {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid white;
+    background: lightgreen;
+  }
+}
+}
+* {
+  box-sizing: border-box;
+   border: 8px solid white;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+    
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style> 
+</head>
+<body>
+<div class="example1"></div>
+<div class="example"></div>
+<div class="example"></div>
+<div class="example"></div>
+
+<div class="row">
+  <div class="column" style="background-color: lightgray;">
+  <style>
+
+  </style>
+  </div>
+  
+  <div class="column" style="background-color:lightgray;">
+    
+  </div>
+  
+  <div class="column" style="background-color:lightgray;">
+   
+  </div>
+  
+  <div class="column" style="background-color:lightgray;">
+  </div>
+</div>
+
+</body>
+</html>
